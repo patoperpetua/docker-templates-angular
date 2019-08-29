@@ -1,0 +1,11 @@
+include:
+  - project: 'singletonsd/pipelines/common'
+    file: '/src/.gitlab-ci-scripts.yml'
+
+variables:
+  SCRIPTS_SKIP_TEST: "true"
+
+stages:
+  - build
+  - test
+  - deploy
